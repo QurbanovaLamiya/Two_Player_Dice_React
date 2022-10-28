@@ -1,6 +1,7 @@
 import { Component, Fragment } from "react";
 import Button from "../Button";
 import Images from "../DiceImage";
+import GameResult from "../GameResult";
 import Player1 from "../Player1";
 import Player2 from "../Player2";
 import RollDiceStyle from "./rollDice.module.css";
@@ -43,6 +44,10 @@ class RollDice extends Component {
         <div className={RollDiceStyle.container}>
           <Button button={this.startGame} title="Go Roll" />
           <Button button={this.clearGame} title="Clear" />
+        </div>
+        <div className={RollDiceStyle.gameResult}>
+          <GameResult title="Player1"/>
+          <GameResult title="Player2"/>
         </div>
         <div className={RollDiceStyle.dice}>
           <Player1 player1={this.state.player1} />

@@ -11,9 +11,15 @@
   display: flex;
   justify-content: space-between;
 }
+.gameResult {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
 .dice {
-  margin: 5% auto;
-  width: 50%;
+  margin: 30px auto;
+  width: 37%;
   display: flex;
   justify-content: space-between;
 }

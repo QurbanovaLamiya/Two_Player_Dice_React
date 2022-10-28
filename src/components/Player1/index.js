@@ -4,7 +4,7 @@ class Player1 extends Component {
   render() {
     return (
       <Fragment>
-        <img src={this.props.player1} alt="" width={200} height={200} />
+        <img src={this.props.player1} alt="" width={130} height={130} />
       </Fragment>
     );
   }

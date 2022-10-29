@@ -1,5 +1,6 @@
 import { Component } from "react";
 import gameResultStyle from "./gameResult.module.css";
+import { PropTypes } from "prop-types";
 
 class GameResult extends Component {
   render() {
@@ -18,12 +19,18 @@ class GameResult extends Component {
                 : gameResultStyle.draw
             }
           >
-              {this.props.result}
+            {this.props.result}
           </span>
         </h3>
       </div>
     );
   }
 }
+
+GameResult.propTypes = {
+  title: PropTypes.string,
+  player: PropTypes.number,
+  result: PropTypes.string,
+};
 
 export default GameResult;

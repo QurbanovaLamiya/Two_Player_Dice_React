@@ -1,4 +1,5 @@
 import { Component, Fragment } from "react";
+import { PropTypes } from "prop-types";
 
 class Player2 extends Component {
   render() {
@@ -9,5 +10,9 @@ class Player2 extends Component {
     );
   }
 }
+
+Player2.propTypes = {
+  player2: PropTypes.string,
+};
 
 export default Player2;

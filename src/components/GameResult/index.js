@@ -1,14 +1,26 @@
-import { Component} from "react";
-import gameResultStyle from "./gameResult.module.css"
+import { Component } from "react";
+import gameResultStyle from "./gameResult.module.css";
 
 class GameResult extends Component {
   render() {
     return (
       <div className={gameResultStyle.gameResult}>
-        <h3>{this.props.title}</h3>
-        <h5>Dice:</h5>
-        <h5>Score:</h5>
-        <h5>Result:</h5>
+        <h2>{this.props.title}</h2>
+        <h3>Dice: {this.props.player}</h3>
+        <h3>
+          Result:
+          <span
+            className={
+              this.props.result === "Win"
+                ? gameResultStyle.win
+                : this.props.result === "Lose"
+                ? gameResultStyle.lose
+                : gameResultStyle.draw
+            }
+          >
+              {this.props.result}
+          </span>
+        </h3>
       </div>
     );
   }

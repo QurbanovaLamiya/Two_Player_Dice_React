@@ -1,5 +1,22 @@
 .gameResult {
   text-align: center;
-  width: 150px;
-border-radius: 3px solid white;
+  width: 100%;
+  border: 3px solid #26b7f0;
+}
+
+h2,
+h3 {
+  color: #0a5775;
+}
+
+.draw {
+  color: #c5c511;
+}
+
+.win {
+  color: #008000;
+}
+
+.lose {
+  color: #ff0000;
 }
